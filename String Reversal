@@ -1,0 +1,26 @@
+Given a String,print the given string in reverse order.
+//reverse(apple)===elppa
+//reverse(shashank)===knahsahs
+
+Method 1:-
+function reverse(str)
+{
+return str.split('').reverse().join('');
+}
+
+Method 2:-
+function reverse(str)
+{
+  let reversed ='';
+  for(let character of str)
+  {
+    reversed = characted+reversed
+  }
+  return reversed; 
+}
+
+Method 3:-
+function reverse(str)
+{
+return str.split('').reduce((rev,char)=>rev+char, '');
+}
