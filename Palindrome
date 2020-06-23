@@ -1,0 +1,11 @@
+//Given a String ,return true if the string is ppalindrome else reurn false .
+//palindrome('aabbaa')=true
+//palindrome('sdfghkkk')=false
+
+function palindrome(str)
+{
+const reversed= str.split('').reverse().join('');
+
+return str === reversed;
+}
+module.exports =palindrome
