@@ -2,6 +2,7 @@
 //palindrome('aabbaa')=true
 //palindrome('sdfghkkk')=false
 
+Solution 1:
 function palindrome(str)
 {
 const reversed= str.split('').reverse().join('');
@@ -9,3 +10,11 @@ const reversed= str.split('').reverse().join('');
 return str === reversed;
 }
 module.exports =palindrome
+
+Solution 2:
+function palindrome(str)
+{
+str.split('').every((char,i) => {
+retrun char=== str[]str.lenght -i -1];
+});
+}
