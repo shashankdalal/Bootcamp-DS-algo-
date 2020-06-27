@@ -1,0 +1,30 @@
+//Anagrams=Same characters in same number
+anagrams('rail safety','fairy tales')-->True
+anagrams('Hi there','Bye there')
+
+function anagrams(String1,String2){
+  const aCharMap = buildCharMap(String1);   
+  const bCharMap = buildCharMap(String2);
+  
+  if(Objects.keys(aCharMap).length !== Object.keys.(bCharMap).length){
+    return false;
+  }
+  
+  for(let char in aCharMap){
+    if(aCharMap[Char] !== bCharMap[char])
+     {
+      retrun false;
+     }
+  }
+  return true;
+}
+
+function buildCharMap(str){
+  const charMap={};
+  
+  for(let char of str.replace(/[^\w]/g, '').toLowerCase())
+  {
+    charMap[char] = charMap[char]+1 || 1;
+  }
+  
+}
